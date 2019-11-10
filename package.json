@@ -1,0 +1,29 @@
+{
+  "name": "skazmierowski",
+  "version": "0.1.0",
+  "description": "Montaż i edycja podcastów.",
+  "main": "-",
+  "scripts": {
+    "scss:mobile": "node-sass ./scss/mobile.scss --source-map-root -o -r ./css/mobile.css --source-map-embed",
+    "scss:desktop": "node-sass ./scss/desktop.scss --source-map-root -o -r ./css/desktop.css --source-map-embed",
+    "dev": "npm-run-all -p scss:*",
+    "watch": "watch \"npm run dev\" ./scss"
+  },
+  "keywords": [
+    "podcast",
+    "montaż",
+    "edycja",
+    "lektor",
+    "usługi",
+    "nagrania",
+    "dźwięk"
+  ],
+  "author": "Szymon Grobelny",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "node-sass": "^4.13.0",
+    "npm-run-all": "^4.1.5",
+    "watch": "^1.0.2"
+  }
+}

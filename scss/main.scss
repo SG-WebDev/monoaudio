@@ -1,0 +1,39 @@
+@keyframes show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.header {
+  display: flex;
+  background: url('../assets/img/deeptone-bg.jpg') center no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  &__Section {
+    margin: auto;
+    color: #ffffff;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    padding: 25px 0;
+    width: 100%;
+    background-color: rgba(0,0,0,0.4);
+  }
+  &__SectionHeading {
+    animation-name: show;
+    &--top {
+      animation-duration: 1s;
+      letter-spacing: 5px;
+      font-weight: 200;
+    }
+    &--bottom {
+      animation-duration: 2s;
+      letter-spacing: 3px;
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+  }
+}

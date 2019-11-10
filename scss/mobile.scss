@@ -1,0 +1,12 @@
+@import 'main';
+
+.header {
+  &__SectionHeading {
+    &--top {
+      font-size: 48px;
+    }
+    &--bottom {
+      font-size: 48px;
+    }
+  }
+}
