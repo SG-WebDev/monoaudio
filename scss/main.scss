@@ -1,3 +1,7 @@
+html {
+  font-size: 16px;
+}
+
 @keyframes show {
   from {
     opacity: 0;
@@ -20,7 +24,7 @@
     text-align: center;
     padding: 25px 0;
     width: 100%;
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(0,0,0,0.5);
   }
   &__SectionHeading {
     animation-name: show;
