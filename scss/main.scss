@@ -1,5 +1,8 @@
-html {
+@mixin font {
+  font-family: 'Raleway', sans-serif;
   font-size: 16px;
+  font-weight: 400;
+  color: #333;
 }
 
 @keyframes show {
@@ -10,13 +13,30 @@ html {
     opacity: 1;
   }
 }
+
+body {
+  @include font;
+  &::-webkit-scrollbar {
+    width: 4px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: #aaa;
+  }
+  &::-webkit-scrollbar-track {
+    background: rgba(0,0,0,0.1);
+  }
+}
+
+.section {
+  height: 100vh;
+}
+
 .header {
   display: flex;
   background: url('../assets/img/header-bg.jpg') center no-repeat;
   background-size: cover;
-  width: 100vw;
-  height: 100vh;
   overflow: hidden;
+  width: 100%;
   &__Section {
     margin: auto;
     color: #ffffff;
@@ -26,7 +46,7 @@ html {
     width: 100%;
     background-color: rgba(0,0,0,0.5);
   }
-  &__SectionHeading {
+  &__Heading {
     animation-name: show;
     &--top {
       animation-duration: 1s;
@@ -39,5 +59,23 @@ html {
       font-weight: 800;
       text-transform: uppercase;
     }
+  }
+}
+
+.about {
+  display: flex;
+  align-items: center;
+  &__Content {
+    padding: 25px;
+    font-size: 1.5em;
+  }
+  &__Text {
+    text-align: justify;
+  }
+  &__Heading {
+    font-size: 4.5rem;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin: auto;
   }
 }
