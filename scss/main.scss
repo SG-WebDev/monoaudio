@@ -1,8 +1,14 @@
+$white: #ffffff;
+$gray: #333333;
+$lightGray: #bbbbbb;
+$main: #34495e;
+$alt: #336e7b;
+
 @mixin font {
   font-family: 'Raleway', sans-serif;
   font-size: 16px;
   font-weight: 400;
-  color: #333;
+  color: $gray;
 }
 
 @keyframes show {
@@ -20,7 +26,7 @@ body {
     width: 4px;
   }
   &::-webkit-scrollbar-thumb {
-    background: #aaa;
+    background: $lightGray;
   }
   &::-webkit-scrollbar-track {
     background: rgba(0,0,0,0.1);
@@ -28,7 +34,10 @@ body {
 }
 
 .section {
-  height: 100vh;
+  &__Title {
+    text-transform: uppercase;
+    font-weight: 800;
+  }
 }
 
 .header {
@@ -37,10 +46,10 @@ body {
   background-size: cover;
   overflow: hidden;
   width: 100%;
+  height: 100vh;
   &__Section {
     margin: auto;
-    color: #ffffff;
-    font-family: 'Raleway', sans-serif;
+    color: $white;
     text-align: center;
     padding: 25px 0;
     width: 100%;
@@ -63,19 +72,33 @@ body {
 }
 
 .about {
-  display: flex;
-  align-items: center;
   &__Content {
-    padding: 25px;
+    padding: 50px;
     font-size: 1.5em;
+    margin: auto;
   }
   &__Text {
     text-align: justify;
   }
-  &__Heading {
-    font-size: 4.5rem;
-    text-transform: uppercase;
-    font-weight: 800;
+}
+
+.coop {
+  &__Content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px;
     margin: auto;
+  }
+  &__Item {
+    transition: transform 0.25s ease-in-out;
+    &:hover {
+      transform: scale(0.95);
+    }
+  }
+  &__Img {
+    max-width: 100%;
+    height: auto;
   }
 }
