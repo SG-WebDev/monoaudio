@@ -93,6 +93,7 @@ body {
   }
   &__Item {
     transition: transform 0.25s ease-in-out;
+    margin: 25px 0;
     &:hover {
       transform: scale(0.95);
     }
