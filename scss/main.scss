@@ -2,6 +2,7 @@ $white: #ffffff;
 $gray: #333333;
 $lightGray: #bbbbbb;
 $main: #34495e;
+$mainDark: #12273c;
 $alt: #336e7b;
 
 @mixin font {
@@ -101,5 +102,25 @@ body {
   &__Img {
     max-width: 100%;
     height: auto;
+  }
+}
+
+.footer {
+  background-color: $mainDark;
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $white;
+  &__Link {
+    transition: transform 0.25s ease-in-out;
+    color: $white;
+    border-bottom: 1px solid $white;
+    margin: 0 5px;
+    &:hover {
+      text-decoration: none;
+      transform: scale(0.95);
+      color: $white;
+    }
   }
 }
