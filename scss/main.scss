@@ -130,6 +130,7 @@ body {
   &__ItemText {
     font-size: 1.5em;
     color: $gray;
+    font-weight: 200;
   }
 }
 
@@ -140,10 +141,12 @@ body {
   align-items: center;
   justify-content: center;
   color: $white;
+  &__Text {
+    font-weight: 200;
+  }
   &__Link {
     transition: transform 0.25s ease-in-out;
     color: $white;
-    border-bottom: 1px solid $white;
     margin: 0 5px;
     &:hover {
       text-decoration: none;
