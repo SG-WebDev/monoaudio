@@ -74,8 +74,6 @@ body {
 
 .about {
   &__Content {
-    padding: 50px;
-    font-size: 1.5em;
     margin: auto;
   }
   &__Text {
@@ -110,8 +108,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    width: 100%;
-    height: 100%;
   }
   &__Item {
     display: flex;
@@ -122,11 +118,14 @@ body {
     &:hover {
       text-decoration: none;
       transform: scale(1.1);
+      .contact__ItemText {
+        color: $alt;
+      }
     }
   }
   &__ItemIcon {
-    color: $alt;
     font-size: 3em;
+    color: $alt;
   }
   &__ItemText {
     font-size: 1.5em;
