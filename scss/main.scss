@@ -86,6 +86,39 @@ body {
   }
 }
 
+.pricing {
+  &__Content {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__Table {
+    font-size: 1.5em;
+    width: 75%;
+    text-align: center;
+  }
+  &__TableHead {
+    background-color: $alt;
+    color: $white;
+  }
+  &__TableRow {
+    border-bottom: 1px solid $alt;
+  }
+  &__TableCol {
+    border-left: 1px solid $alt;
+    border-right: 1px solid $alt;
+    padding: 10px;
+    &:first-child {
+      border-left-width: 0;
+    }
+    &:last-child {
+      border-right-width: 0;
+    }
+  }
+}
+
 .coop {
   &__Content {
     display: flex;
