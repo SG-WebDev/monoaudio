@@ -27,6 +27,13 @@
   }
 }
 
+.pricing {
+  &__Table {
+    width: 95%;
+  }
+}
+
+
 .contact {
   &__Content {
     flex-direction: column;
