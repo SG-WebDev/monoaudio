@@ -78,6 +78,12 @@ body {
   &__Text {
     text-align: justify;
   }
+  &__ListItem {
+    color: $alt;
+  }
+  &__ListText {
+    color: $gray;
+  }
 }
 
 .coop {
