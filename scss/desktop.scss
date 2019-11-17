@@ -36,7 +36,16 @@
 
 .pricing {
   &__Table {
-    width: 75%;
+    font-size: 1.5em;
+  }
+  &__TableCol {
+    padding: 10px 50px;
+    &:first-child {
+      text-align: right;
+    }
+    &:last-child {
+      text-align: left;
+    }
   }
 }
 

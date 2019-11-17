@@ -28,10 +28,18 @@
 
 .pricing {
   &__Table {
-    width: 95%;
+    font-size: 1.25em;
+  }
+  &__TableCol {
+    padding: 10px 25px;
+    &:first-child {
+      text-align: center;
+    }
+    &:last-child {
+      text-align: center;
+    }
   }
 }
-
 
 .contact {
   &__Content {

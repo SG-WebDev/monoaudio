@@ -94,21 +94,13 @@ body {
     align-items: center;
     justify-content: center;
   }
-  &__Table {
-    font-size: 1.5em;
-    text-align: center;
-  }
   &__TableHead {
-    background-color: $alt;
-    color: $white;
-  }
-  &__TableRow {
-    border-bottom: 1px solid $alt;
+    font-weight: 800;
+    color: $alt;
   }
   &__TableCol {
     border-left: 1px solid $alt;
     border-right: 1px solid $alt;
-    padding: 10px;
     &:first-child {
       border-left-width: 0;
     }
